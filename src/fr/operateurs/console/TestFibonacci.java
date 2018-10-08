@@ -3,20 +3,19 @@ package fr.operateurs.console;
 
 import java.util.Scanner;
 
-public class TestFibonacci {
-    public void test(){
-        //val1 = 0
-        int valN = 0;
-        //val2 = 1;
-        int valN_1 = 1;
-        int valN_2= valN+valN_1;
+class TestFibonacci {
+    void test(){ // function
 
-        System.out.println("Combien de rang voulez vous ? ");
-        Scanner sc = new Scanner(System.in);
+        int valN = 0; // first number
+        int valN_1 = 1;// second number
+        int valN_2= valN+valN_1;// sum of 2 numbers
+
+        System.out.println("Combien de rang voulez vous ? "); // We demamnd number of ranks
+        Scanner sc = new Scanner(System.in); // scanner
         int total = sc.nextInt();
 
           for(int i=0;i<total;i++){
-              valN = valN_1;
+              valN = valN_1; // valN receive valN_1
               valN_1 = valN_2;
               valN_2= valN+valN_1;
               System.out.println(valN);// show result valN
